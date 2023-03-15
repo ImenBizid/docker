@@ -3,10 +3,10 @@ name: ci_pipeline
 on:
   push:
     branches:
-      - "main"
+      - "master"
 
 jobs:
-  build_image_push_to_ECR:
+  build_image_push_to_dockerhub:
     runs-on: ubuntu-18.04
     steps:
     - name: Checkout
